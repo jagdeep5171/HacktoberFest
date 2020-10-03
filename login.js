@@ -5,7 +5,6 @@ router.get('/',(req,res,next)=>{
 })
 router.post('/',(req,res,next)=>{
     console.log(req.body);
-    console.log('hmm');
-    res.send('we will handle login requests soon')
+    
 })
 module.exports =  router;
