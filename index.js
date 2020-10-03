@@ -5,6 +5,8 @@ const bcrypt = require('bcrypt');
 const { prototype } = require('module');
 
 app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/login', require('./login.js'));
 app.use((req,res)=>{res.send("HELLO")});
 app.listen (3000||port.env);
