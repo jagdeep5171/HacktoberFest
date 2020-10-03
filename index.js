@@ -6,5 +6,5 @@ const { prototype } = require('module');
 
 app = express();
 
-
-app.listen (3000||port.env);
+const PORT = process.env.port || 3000;
+app.listen (PORT);
