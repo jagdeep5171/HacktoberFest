@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const { prototype } = require('module');
 
-app = express();
+const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/login', require('./login.js'));
